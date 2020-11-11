@@ -12,6 +12,7 @@ export default authHandler;
 console.log(`ENV VARS`)
 console.log(`process.env.GITHUB_ID`, process.env.GITHUB_ID)
 console.log(`process.env.GITHUB_SECRET`, process.env.GITHUB_SECRET)
+console.log(`process.env.NEXTAUTH_URL`, process.env.NEXTAUTH_URL)
 
 const options = {
   providers: [
