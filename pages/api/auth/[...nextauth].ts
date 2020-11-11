@@ -9,6 +9,9 @@ const prisma = new PrismaClient();
 
 const authHandler: NextApiHandler = (req, res) => NextAuth(req, res, options);
 export default authHandler;
+console.log(`ENV VARS`)
+console.log(`process.env.GITHUB_ID`, process.env.GITHUB_ID)
+console.log(`process.env.GITHUB_SECRET`, process.env.GITHUB_SECRET)
 
 const options = {
   providers: [
